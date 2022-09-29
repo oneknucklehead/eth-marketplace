@@ -5,10 +5,8 @@ import { useWeb3 } from '@components/providers'
 import { getAllCourse } from 'content/courses/fetcher'
 
 export default function Home({ courses }) {
-  const { test } = useWeb3()
   return (
     <>
-      {test}
       <Hero />
       <CourseList courses={courses} />
     </>
